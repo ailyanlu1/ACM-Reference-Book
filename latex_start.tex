@@ -1,0 +1,70 @@
+\documentclass[twocolumn,a4paper,twoside,11pt]{article}
+% \usepackage{xeCJK}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm}
+\usepackage{subcaption}
+\usepackage{listings,xcolor}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setsansfont{Consolas}
+\setmonofont[Mapping={}]{Consolas}
+\geometry{left=1cm,right=1cm,top=2cm,bottom=0.5cm,bindingoffset=8mm}
+\setlength{\columnsep}{30pt}
+
+\pagestyle{fancy}
+\lhead{PwzXxm}
+\rhead{Page \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\lstset {
+    language = c++,
+    numbers = left,
+    numberstyle = \tiny,
+    breaklines = true,
+    captionpos = b,
+    tabsize = 4,
+    keepspaces = true,
+    frame = leftline,
+    columns = fullflexible,
+    commentstyle = \color[RGB]{177,36,40},
+    keywordstyle = \bfseries\color{green!40!black},
+    basicstyle   = \small\ttfamily,
+    stringstyle  = \color[RGB]{148,0,209}\ttfamily,
+    rulesepcolor = \color{black},
+    showstringspaces = false,
+}
+
+\title{\bfseries PwzXxm's ACM Reference}
+\author{PwzXxm}
+
+\begin{document}\small
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\newpage
+\pagestyle{empty}
+\tableofcontents
+\newpage
+\clearpage
+\newpage
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+% \section{Hello World}
+% \begin{lstlisting}
+% #include <iostream>
+% // comment
+% using namespace std;
+% int main() {
+%     cout << "Hw" << endl;
+%     return 0;
+% }
+% \end{lstlisting}
+  
+% \end{document}

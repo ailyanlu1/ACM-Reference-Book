@@ -1,0 +1,28 @@
+# ignore c++ intermediate file
+*.o
+
+# ignore tex intermediate file
+*.acn
+*.acr
+*.alg
+*.aux
+*.bak
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.toc
