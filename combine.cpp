@@ -7,6 +7,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <cctype>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
 using std::ofstream;
@@ -19,6 +20,19 @@ using std::endl;
 #define GREEN_S "\033[1;32m"
 #define GREEN_E "\033[0m"
 
+string scanCapital(const string &s) {
+    string res= "";
+
+    for (string::size_type i = 0; i < s.size(); ++i) {
+        if (i != 0 && isupper(s[i])) {
+            res += " ";
+        }
+        res += s[i];
+    }
+
+    return res;
+}
+
 string app_each_cpp(ofstream &out) {
     int cnt = 0;
 
@@ -27,7 +41,7 @@ string app_each_cpp(ofstream &out) {
 
     while (dir_iter != end) {
         path p = dir_iter->path();
-        string str_name = p.stem().string();
+        string str_name = scanCapital(p.stem().string());
 
         if (is_directory(p)) {
             // add its name as section
