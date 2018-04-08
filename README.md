@@ -7,12 +7,12 @@ It generates a pdf file using Latex. `combine` is written in C++ and it is used 
 ```
 - src
    |
-   |--- Graph                        \section{Graph}
-          |--- Dijkstra.cpp          \subsection{Dijkstra}
-          |--- Floyd.cpp             \subsection{Floyd}
+   |--- Graph                   =>     \section{Graph}
+          |--- Dijkstra.cpp     =>     \subsection{Dijkstra}
+          |--- Floyd.cpp        =>     \subsection{Floyd}
 
-   |--- Geometry                     \section{Geometry}
-          |--- ConvexHull.cpp        \subsection{Convex Hull}
+   |--- Geometry                =>     \section{Geometry}
+          |--- ConvexHull.cpp   =>     \subsection{Convex Hull}
 
 
 ```
