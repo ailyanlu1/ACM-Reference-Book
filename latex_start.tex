@@ -9,8 +9,9 @@
 \usepackage{fancyhdr}
 \setsansfont{Consolas}
 \setmonofont[Mapping={}]{Consolas}
-\geometry{left=1cm,right=1cm,top=2cm,bottom=0.5cm,bindingoffset=8mm}
+\geometry{left=1cm,right=1cm,top=2.5cm,bottom=0.5cm,bindingoffset=5mm}
 \setlength{\columnsep}{30pt}
+\setlength{\headheight}{14pt}
 
 \pagestyle{fancy}
 \lhead{PwzXxm}
@@ -20,6 +21,7 @@
 \rfoot{}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+\setcounter{secnumdepth}{0}
 
 \lstset {
     language = c++,
@@ -33,7 +35,7 @@
     columns = fullflexible,
     commentstyle = \color[RGB]{177,36,40},
     keywordstyle = \bfseries\color{green!40!black},
-    basicstyle   = \small\ttfamily,
+    basicstyle   = \scriptsize\ttfamily,
     stringstyle  = \color[RGB]{148,0,209}\ttfamily,
     rulesepcolor = \color{black},
     showstringspaces = false,
@@ -48,23 +50,12 @@
 \end{titlepage}
 
 \newpage
-\pagestyle{empty}
+\pagestyle{plain}
 \tableofcontents
 \newpage
 \clearpage
 \newpage
 \pagestyle{fancy}
 \setcounter{page}{1}
+\setcounter{section}{0}
 
-% \section{Hello World}
-% \begin{lstlisting}
-% #include <iostream>
-% // comment
-% using namespace std;
-% int main() {
-%     cout << "Hw" << endl;
-%     return 0;
-% }
-% \end{lstlisting}
-  
-% \end{document}
