@@ -1,3 +1,8 @@
+# ignore generated file
+acm_notebook.pdf
+acm_notebook.tex
+combine
+
 # ignore osx
 .[Dd][Ss]_[Ss][Tt]tore
 
