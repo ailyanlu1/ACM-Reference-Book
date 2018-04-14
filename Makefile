@@ -10,3 +10,6 @@ combine: combine.cpp
 
 clean:
 	rm *.aux *.toc *.o *.log *.pdf combine acm_notebook.tex
+
+clean_src:
+	find ./src -type f -not -name '*.cpp' -delete
