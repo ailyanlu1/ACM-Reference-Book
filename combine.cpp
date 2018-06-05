@@ -24,7 +24,7 @@ string scanCapital(const string &s) {
     string res= "";
 
     for (string::size_type i = 0; i < s.size(); ++i) {
-        if (i != 0 && isupper(s[i])) {
+        if (i != 0 && isupper(s[i]) && islower(s[i-1])) {
             res += " ";
         }
         res += s[i];
@@ -48,7 +48,7 @@ string app_each_cpp(ofstream &out) {
             cout << str_name << endl;
             out << "\\newpage" << endl;
             out << "\\section{" << str_name << "}" << endl;
-        } else if (extension(p.filename()) == ".cpp") {
+        } else if (extension(p.filename()) == ".cpp" || extension(p.filename()) == ".java") {
             cout << "\t" << str_name << endl;
 
             // add its name as subsection
