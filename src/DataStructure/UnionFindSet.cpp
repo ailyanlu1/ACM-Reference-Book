@@ -1,11 +1,11 @@
 // O(a(n)) > O(log(n))
 int par[MAXN];
-int rank[MAXN];
+int rk[MAXN];
 
 void init(int n) {
     for (int i = 0; i < n; i++) {
         par[i] = i;
-        rank[i] = 0;
+        rk[i] = 0;
     }
 }
 
@@ -22,11 +22,11 @@ void unite(int x, int y) {
     y = find(y);
     if (x == y) return;
 
-    if (rank[x] < rank[y]) {
+    if (rk[x] < rk[y]) {
         par[x] = y;
     } else {
         par[y] = x;
-        if (rank[x] == rank[y]) rank[x]++;
+        if (rk[x] == rk[y]) rk[x]++;
     }
 }
 
